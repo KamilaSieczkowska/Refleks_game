@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sheet {
+    width: 100%;
+    height: 100%;
+    background-color: #00867F;
+    margin: 0;
+    padding-top: 100px;
+}
+
+// ------ main ------
+
+
+    .container {
+        margin: 0 auto;
+        height: 80%;
+        width: 60%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px dashed #D8D8D8;
+    
+        .intro {
+            height: 100%;
+            width: 70%;
+            h1 {
+                margin: 0;
+                font-family: 'Gloria Hallelujah', cursive;        font-size: 40px;
+                font-size: 140px;
+                color: #FFBF50;
+                text-align: center;
+        
+                .e {
+                    color: lavender;
+                }
+        
+                .f {
+                    color: yellowgreen;
+                }
+        
+                .l {
+                    color: lightblue
+                }
+        
+                .k {
+                    color: pink
+                }
+        
+                .s {
+                    color: #C5C5C5;
+                }
+            }
+        
+            p {
+                text-align: right;
+                color: white;
+                font-size: 30px;
+                margin-top: -40px;
+            }
+        
+            .btn_box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+        
+                a {
+                    display: inline-block;
+                    padding: 15px;
+                    color: white;
+                    background-color: orange;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 5px;
+                    width: 180px;
+                    text-align: center;            
+                
+                    &:hover {
+                        background-color: white;
+                        color: orangered;
+                    }
+                
+                }
+            }
+        }
+    }
+
+
+
+// ------ instruction ------
+
+.container_info {
+        margin: 0 auto;
+        height: 80%;
+        width: 60%;
+        background-color: white;
+        border: 5px dashed #9C9C9C;
+        
+        .info {
+            padding: 30px;
+
+            .rules {
+                color: orange;
+                font-weight: 800;
+            }
+
+            .welcome {
+                color: darkslategrey
+            }
+            p {
+                position: relative;
+                left: 40px;
+                padding-right: 10px;
+
+                span {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: yellowgreen;
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -40px;
+                    top: -5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                    line-height: 16px;
+                }
+    
+                strong {
+                    color: #C00000;
+                }
+            }
+
+            
+
+            .btn_box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+        
+                .btn_play {
+                    display: inline-block;
+                    padding: 15px;
+                    color: white;
+                    background-color: orange;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 5px;
+                    width: 180px;
+                    text-align: center;            
+                
+                    &:hover {
+                        background-color: #DFDFDF;
+                        color: orangered;
+                    }
+                
+                }
+            }
+
+        }
+    }
+
+
+
+// ------ game ------
+
+.sheet_game {
+    width: 100%;
+    height: 100%;
+    background-color: #00867F;
+    margin: 0;
+    padding-top: 50px;
+
+    .container_game {
+        margin: 0 auto;
+        height: 95%;
+        width: 75%;
+        background-color: #DFDFDF;
+        border: 5px dashed #9C9C9C;
+    
+        .game {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .game_info {
+                width: 250px;
+                height: 120px;
+                padding: 20px;
+                
+                p {
+                    font-size: 26px;
+                    font-weight: 800;
+                    color: #23B100;
+                    margin: 5px;
+                    span {
+                        font-size: 30px;
+                        color: #3D3D3D;
+                    }
+                    
+                    
+                }
+            }
+
+            .cart {
+                width: 400px;
+                height: 400px;
+                background-color: white;
+                border: 7px solid #D60000;
+                border-radius: 50%;
+                position: absolute;
+            }
+
+            .user__cart {
+                bottom: 20px;
+                left: 110px;
+                position: relative;
+
+                .image {
+                    width: 100px;
+                    height: 100px;
+                    // border: 1px solid black;
+                    position: absolute;
+                }
+
+                .img1 {
+                    top: 17px;
+                    left: 105px;                 
+                }
+                .img2 {
+                    top: 115px;
+                    left: 14px;                 
+                }
+                .img3 {
+                    bottom: 70px;
+                    left: 32px;                 
+                }
+                .img4 {
+                    bottom: 15px;
+                    left: 135px;                 
+                }
+                .img5 {
+                    top: 30px;
+                    right: 65px;                 
+                }
+                .img6 {
+                    top: 130px;
+                    right: 10px;                  
+                }
+                .img7 {
+                    bottom: 55px;
+                    right: 50px;                  
+                }
+                .img8 {
+                    bottom: 153px;
+                    right: 141px;                 
+                }
+
+                img {
+                    height: 100%;
+                }
+                
+                p {
+                    position: absolute;
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 600;
+                    background-color: white;
+                    border: 5px solid #D60000;
+                    padding: 5px;
+                    color: #3D3D3D;
+                    bottom: -50px;
+                    left: 50%;
+                    transform: translateX(-50%)
+                }
+            }
+
+            .opponent__cart {
+                top: 20px;
+                right: 40px;
+
+                .image {
+                    width: 100px;
+                    height: 100px;
+                    // border: 1px solid black;
+                    position: absolute;
+                }
+
+                .img1 {
+                    top: 17px;
+                    left: 105px;                 
+                }
+                .img2 {
+                    top: 115px;
+                    left: 14px;                 
+                }
+                .img3 {
+                    bottom: 70px;
+                    left: 32px;                 
+                }
+                .img4 {
+                    bottom: 15px;
+                    left: 135px;                 
+                }
+                .img5 {
+                    top: 30px;
+                    right: 65px;                 
+                }
+                .img6 {
+                    top: 130px;
+                    right: 10px;                  
+                }
+                .img7 {
+                    bottom: 55px;
+                    right: 50px;                  
+                }
+                .img8 {
+                    bottom: 153px;
+                    right: 141px;                 
+                }
+
+                img {
+                    height: 100%;
+                }
+            }
+           
+
+            .btn_box_pause {
+                
+                position: absolute;
+                bottom: 30px;
+                right: 105px;
+
+                .btn_next {
+                    display: inline-block;
+                    padding: 15px;
+                    color: white;
+                    background-color: #FFC400;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 5px;
+                    width: 180px;
+                    text-align: center;            
+                
+                    &:hover {
+                        background-color: #FF7B00;
+                        color: #FFFFFF;
+                    }
+                
+                }
+        
+                .btn_pause {
+                    display: inline-block;
+                    padding: 15px;
+                    color: white;
+                    background-color: #FF0000;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 5px;
+                    width: 180px;
+                    text-align: center;            
+                
+                    &:hover {
+                        background-color: #DA0000;
+                        color: #FFFFFF;
+                    }
+                
+                }
+            }
+        }
+    }
+}
