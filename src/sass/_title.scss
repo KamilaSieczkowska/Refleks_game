@@ -7,6 +7,7 @@
         justify-content: center;
         align-items: center;
         border: 5px dashed #D8D8D8;
+        box-shadow: 0 0 50px black;
     
         .intro {
             height: 100%;
@@ -17,6 +18,7 @@
                 font-size: 140px;
                 color: #FFBF50;
                 text-align: center;
+                text-shadow:  5px 4px rgb(34, 34, 34);
         
                 .e {
                     color: lavender;
@@ -53,21 +55,35 @@
                 align-items: center;
                 margin-top: 20px;
         
-                a {
+                .button {
                     display: inline-block;
                     padding: 15px;
                     color: white;
                     background-color: orange;
+                    background: linear-gradient(#FF7B00,orange);
                     border-radius: 10px;
-                    text-decoration: none;
                     font-size: 25px;
+                    line-height: 35px;
                     font-weight: 600;
                     margin: 5px;
                     width: 180px;
-                    text-align: center;            
+                    text-align: center; 
+                    position: relative;
+                    cursor: pointer;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        border-radius: 10px 10px 0 0;
+                        top: 1px;
+                        left: 1px;
+                        width: calc(100% - 4px);
+                        height: 50%;
+                        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255,255,255,0.2));
+                    }
                 
                     &:hover {
-                        background-color: orangered;
+                        background: linear-gradient(#FF4800,#FF9100);
                     }
                 
                 }

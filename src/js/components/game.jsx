@@ -158,7 +158,6 @@ class Game extends React.Component {
     }
 
     handleUserPoints = (e) => {
-   
         
         
         this.setState({

@@ -11,6 +11,7 @@
         width: 75%;
         background-color: #DFDFDF;
         border: 5px dashed #9C9C9C;
+        box-shadow: 0 0 50px black;
     
         .game {
             width: 100%;
@@ -21,14 +22,15 @@
                 width: 250px;
                 height: 120px;
                 padding: 20px;
+                text-shadow: 1px 1px black;
                 
                 p {
-                    font-size: 26px;
+                    font-size: 28px;
                     font-weight: 800;
                     color: #23B100;
                     margin: 5px;
                     span {
-                        font-size: 30px;
+                        font-size: 32px;
                         color: #3D3D3D;
                     }
                 }
@@ -47,6 +49,7 @@
     border: 7px solid #D60000;
     border-radius: 50%;
     position: absolute;
+    box-shadow: 1px 1px 10px black;
 
 }
 
@@ -60,14 +63,15 @@
         display: inline-block;
         font-size: 20px;
         font-weight: 600;
-        background-color: white;
+        background-color: #D60000;
         border: 5px solid #D60000;
         border-radius: 10px;
         padding: 5px;
-        color: #3D3D3D;
+        color: white;
         bottom: -50px;
         left: 50%;
-        transform: translateX(-50%)
+        transform: translateX(-50%);
+        box-shadow: 0 2px 7px black;
     }
 }
 
@@ -147,17 +151,30 @@ img {
         padding: 15px;
         color: white;
         background-color: #FF0000;
+        background: linear-gradient(#C50000, #FF0000);
         border-radius: 10px;
         text-decoration: none;
         font-size: 25px;
         font-weight: 600;
         margin: 5px;
         width: 180px;
-        text-align: center;            
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            position: absolute;
+            border-radius: 10px 10px 0 0;
+            top: 1px;
+            left: 1px;
+            width: calc(100% - 4px);
+            height: 50%;
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255,255,255,0.2));
+        }            
                
         &:hover {
-            background-color: #DA0000;
-            color: #FFFFFF;
+            background: linear-gradient(#860101, #FF0000);
         }
     }
 }

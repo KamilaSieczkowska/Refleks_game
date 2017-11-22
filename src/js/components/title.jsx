@@ -23,8 +23,8 @@ class Main extends React.Component {
                             </h1>
                             <p>... zmarnuj trochę czasu!</p>
                             <div className="btn__box">
-                                <a href="#" className="btn__info"> Zasady gry </a>
-                                <a href="#" className="btn__start"> Graj</a>
+                                <span className="button btn__info"> Zasady gry </span>
+                                <span className="button btn__start"> Graj </span>
                             </div>
                         </div>
                     </div>
