@@ -1,4 +1,11 @@
 import React from 'react';
+import { Router,
+    Route,
+    Link,
+    IndexLink,
+    IndexRoute,
+    hashHistory
+} from 'react-router';
 import {Footer} from './footer.jsx';
 
 
@@ -23,8 +30,8 @@ class Main extends React.Component {
                             </h1>
                             <p>... zmarnuj trochę czasu!</p>
                             <div className="btn__box">
-                                <span className="button btn__info"> Zasady gry </span>
-                                <span className="button btn__start"> Graj </span>
+                                <Link to="/instruction"><span className="button btn__info"> Zasady gry </span></Link>
+                                <Link to="/game"><span className="button btn__start"> Graj </span></Link>
                             </div>
                         </div>
                     </div>

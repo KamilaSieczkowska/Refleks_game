@@ -18,7 +18,6 @@ class Timer extends React.Component {
 
         if(nextProps.resetTime){
             clearInterval(this.counter);
-            
             this.setState({
                 time: 10
             })
@@ -44,7 +43,6 @@ class Timer extends React.Component {
                     this.props.handleOpponentPoints();
                 } 
             }
-         
         },1000)
     }
 
@@ -104,13 +102,12 @@ class YourCart extends React.Component {
                 <p>Twoja karta</p>
             </div>
         )
-
     }
 }
 
 class OpponentCart extends React.Component {
     render(){
-
+        
         let opponentCartImages = this.props.opponentImages.map((el,index)=> {
             
             return (
@@ -119,7 +116,6 @@ class OpponentCart extends React.Component {
                 </div>
             )
         })
-
 
         return (
             <div className="cart opponent__cart">
@@ -138,7 +134,7 @@ class Game extends React.Component {
 
         this.state = {
             isPaused: false,
-            resetTime: false,
+            resetTime: true,
             opponentPoints: 0,
             userPoints: 0,
             images: ['bear.png', 'bird.png', 'bolid.png', 'bottle.png', 'cat.png', 'crown.png', 'disc.png', 'duck.png', 'earth.png', 'food.png', 'fork.png', 'frankie.png', 'fries.png', 'frog.png', 'girl.png', 'hat.png', 'ostrich.png', 'scissors.png', 'spaceship.png', 'star.png', 'tree.png', 'vader.png']
@@ -158,8 +154,7 @@ class Game extends React.Component {
     }
 
     handleUserPoints = (e) => {
-        
-        
+
         this.setState({
             userPoints: this.state.userPoints + 1,
             resetTime: true
@@ -185,18 +180,17 @@ class Game extends React.Component {
         let userImages = shuffleTab.slice(0,8);
         let opponentImages = shuffleTab.slice(7,15);
 
-        console.log(userImages, opponentImages)
-
         return (
             <div>
                 <div className="background__game">
                     <div className="container_game">
                         <div className="game">
                             <div className="game_info">
+
                                 <Timer isPaused={this.state.isPaused}
                                     resetTime={this.state.resetTime}
-                                    handleOpponentPoints={this.handleOpponentPoints}/>  
-                                    
+                                    handleOpponentPoints={this.handleOpponentPoints}/> 
+
                                 <Points opponentPoints={this.state.opponentPoints}
                                     userPoints={this.state.userPoints}
                                     handleUserPoints={this.handleUserPoints}/>
@@ -205,11 +199,12 @@ class Game extends React.Component {
                 
                             <YourCart userImages={userImages}
                                 handleUserPoints={this.handleUserPoints}/>
+
                             <OpponentCart opponentImages={opponentImages}/>
                         
                             
                             <div className="btn_box_pause">
-                                <a onClick={this.handlePause} className="btn_pause">Pauza</a>
+                                <button onClick={this.handlePause} className="btn_pause">Pauza</button>
                             </div>
                         </div>
                     </div>

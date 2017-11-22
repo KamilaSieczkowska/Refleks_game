@@ -27,7 +27,7 @@
                 p {
                     font-size: 28px;
                     font-weight: 800;
-                    color: #23B100;
+                    color: #C2068A;
                     margin: 5px;
                     span {
                         font-size: 32px;
@@ -148,10 +148,12 @@ img {
         
     .btn_pause {
         display: inline-block;
+        border: 0;
+        outline: none;
         padding: 15px;
         color: white;
-        background-color: #FF0000;
-        background: linear-gradient(#C50000, #FF0000);
+        background-color: orange;
+        background: linear-gradient(#FF7B00,orange);
         border-radius: 10px;
         text-decoration: none;
         font-size: 25px;
@@ -174,7 +176,7 @@ img {
         }            
                
         &:hover {
-            background: linear-gradient(#860101, #FF0000);
+            background: linear-gradient(#FF4800,#FF9100);
         }
     }
 }
