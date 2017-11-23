@@ -16,7 +16,7 @@ class Game extends React.Component {
             resetTime: false,
             opponentPoints: 0,
             userPoints: 0,
-            images: ['backpack.png','bear.png', 'bird.png', 'bolid.png', 'bottle.png', 'boy.png', 'bunny.png', 'car.png', 'carrot.png', 'cat.png', 'crown.png', 'disc.png', 'duck.png', 'earth.png', 'food.png', 'fork.png', 'frankie.png', 'fries.png', 'frog.png', 'girl.png', 'hat.png', 'hexagon.png', 'match.png', 'ostrich.png', 'scissors.png', 'spaceship.png', 'star.png', 'tree.png', 'vader.png'],
+            images: ['backpack.png', 'banana.png','bear.png', 'bird.png', 'bolid.png', 'bottle.png', 'boy.png', 'bunny.png', 'car.png', 'carrot.png', 'cat.png', 'disc.png', 'duck.png', 'earth.png', 'fork.png', 'frankie.png', 'fries.png', 'frog.png', 'girl.png', 'hat.png', 'hexagon.png', 'lego.png', 'match.png', 'ostrich.png', 'scissors.png', 'spaceship.png', 'star.png', 'tree.png', 'vader.png'],
             userImages: [],
             opponentImages: []
         }
@@ -66,14 +66,14 @@ class Game extends React.Component {
 
 
     reloadCards = () => {
-        // losujemy wspólny element
+        // losuje wspólny element
         let commonImageIndex = Math.floor((Math.random() * 29) + 0);
         
-        // znajdujemy wylosowany obrazek
+        // znajduje wylosowany obrazek
         let commonImage = this.state.images[commonImageIndex];
         console.log(commonImage);
 
-        //losujemy 14 elementów z tablicy głownej
+        //losuje 14 elementów z tablicy głownej, żeby się nie powtarzały z tym wybranym wyżej
         let newImagesTab = [];
         const numberOfImages = 14;
         let randomNumbers = [];
@@ -88,16 +88,16 @@ class Game extends React.Component {
            
         }
         
-        //robimy dwie tablice
+        //robi dwie tablice
         let newUserImagesTab = newImagesTab.slice(0,7);
         let newOpponentImagesTab = newImagesTab.slice(7,16);
         
 
-        //losujemy indexy w tablicach usera i opponenta dla wspólnego obrazka
+        //losuje indexy w tablicach usera i opponenta dla wspólnego obrazka
         let commonAtUserTab = Math.floor((Math.random() * 8) + 0);
         let commonAtOpponentTab = Math.floor((Math.random() * 8) + 0);
 
-        // wstawiamy wspólny obrazek do tablic
+        // wstawia wspólny obrazek do tablic
         newUserImagesTab.splice(commonAtUserTab, 0, commonImage);
         newOpponentImagesTab.splice(commonAtOpponentTab, 0, commonImage);
 
