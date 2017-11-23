@@ -21,7 +21,8 @@ class Routing extends React.Component {
         return  <Router history={hashHistory}>
             <Route path='/' component={Main}/>
             <Route path='/instruction' component={Instruction}/>
-           <Route path='/game' component={Game}/>
+            <Route path='/game' component={Game}/>
+            
 
         </Router>
     }

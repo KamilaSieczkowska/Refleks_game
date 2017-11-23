@@ -222,7 +222,7 @@ footer a {
   color: #3D3D3D;
 }
 
-.sheet_game .container_game .game .cart {
+.sheet_game .container_game .game .card {
   width: 400px;
   height: 400px;
   background-color: white;
@@ -231,63 +231,63 @@ footer a {
   position: absolute;
 }
 
-.sheet_game .container_game .game .user__cart {
+.sheet_game .container_game .game .user__card {
   bottom: 20px;
   left: 110px;
   position: relative;
 }
 
-.sheet_game .container_game .game .user__cart .image {
+.sheet_game .container_game .game .user__card .image {
   width: 100px;
   height: 100px;
   position: absolute;
 }
 
-.sheet_game .container_game .game .user__cart .img1 {
+.sheet_game .container_game .game .user__card .img1 {
   top: 17px;
   left: 105px;
 }
 
-.sheet_game .container_game .game .user__cart .img2 {
+.sheet_game .container_game .game .user__card .img2 {
   top: 115px;
   left: 14px;
 }
 
-.sheet_game .container_game .game .user__cart .img3 {
+.sheet_game .container_game .game .user__card .img3 {
   bottom: 70px;
   left: 32px;
 }
 
-.sheet_game .container_game .game .user__cart .img4 {
+.sheet_game .container_game .game .user__card .img4 {
   bottom: 15px;
   left: 135px;
 }
 
-.sheet_game .container_game .game .user__cart .img5 {
+.sheet_game .container_game .game .user__card .img5 {
   top: 30px;
   right: 65px;
 }
 
-.sheet_game .container_game .game .user__cart .img6 {
+.sheet_game .container_game .game .user__card .img6 {
   top: 130px;
   right: 10px;
 }
 
-.sheet_game .container_game .game .user__cart .img7 {
+.sheet_game .container_game .game .user__card .img7 {
   bottom: 55px;
   right: 50px;
 }
 
-.sheet_game .container_game .game .user__cart .img8 {
+.sheet_game .container_game .game .user__card .img8 {
   bottom: 153px;
   right: 141px;
 }
 
-.sheet_game .container_game .game .user__cart img {
+.sheet_game .container_game .game .user__card img {
   height: 100%;
 }
 
-.sheet_game .container_game .game .user__cart p {
+.sheet_game .container_game .game .user__card p {
   position: absolute;
   display: inline-block;
   font-size: 20px;
@@ -301,58 +301,58 @@ footer a {
   transform: translateX(-50%);
 }
 
-.sheet_game .container_game .game .opponent__cart {
+.sheet_game .container_game .game .opponent__card {
   top: 20px;
   right: 40px;
 }
 
-.sheet_game .container_game .game .opponent__cart .image {
+.sheet_game .container_game .game .opponent__card .image {
   width: 100px;
   height: 100px;
   position: absolute;
 }
 
-.sheet_game .container_game .game .opponent__cart .img1 {
+.sheet_game .container_game .game .opponent__card .img1 {
   top: 17px;
   left: 105px;
 }
 
-.sheet_game .container_game .game .opponent__cart .img2 {
+.sheet_game .container_game .game .opponent__card .img2 {
   top: 115px;
   left: 14px;
 }
 
-.sheet_game .container_game .game .opponent__cart .img3 {
+.sheet_game .container_game .game .opponent__card .img3 {
   bottom: 70px;
   left: 32px;
 }
 
-.sheet_game .container_game .game .opponent__cart .img4 {
+.sheet_game .container_game .game .opponent__card .img4 {
   bottom: 15px;
   left: 135px;
 }
 
-.sheet_game .container_game .game .opponent__cart .img5 {
+.sheet_game .container_game .game .opponent__card .img5 {
   top: 30px;
   right: 65px;
 }
 
-.sheet_game .container_game .game .opponent__cart .img6 {
+.sheet_game .container_game .game .opponent__card .img6 {
   top: 130px;
   right: 10px;
 }
 
-.sheet_game .container_game .game .opponent__cart .img7 {
+.sheet_game .container_game .game .opponent__card .img7 {
   bottom: 55px;
   right: 50px;
 }
 
-.sheet_game .container_game .game .opponent__cart .img8 {
+.sheet_game .container_game .game .opponent__card .img8 {
   bottom: 153px;
   right: 141px;
 }
 
-.sheet_game .container_game .game .opponent__cart img {
+.sheet_game .container_game .game .opponent__card img {
   height: 100%;
 }
 
