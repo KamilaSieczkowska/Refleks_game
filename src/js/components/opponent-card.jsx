@@ -7,7 +7,7 @@ class OpponentCard extends React.Component {
             
             return (
                 <div className={`image img${index+1}`} key={index+1}>
-                    <img src={`../images/${el}`} alt={`${el}`} />
+                    <img src={`src/images/${el}`} alt={`${el}`} />
                 </div>
             )
         })

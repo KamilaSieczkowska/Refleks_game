@@ -8,7 +8,7 @@ class UserCard extends React.Component {
             
             return (
                 <div className={`image img${index+1}`} key={index+1}>
-                    <img onClick={e => this.props.handleUserPoints(e)} src={`../images/${el}`} alt={`${el}`} />
+                    <img onClick={e => this.props.handleUserPoints(e)} src={`src/images/${el}`} alt={`${el}`} />
                 </div>
                 
             )
