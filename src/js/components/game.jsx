@@ -1,6 +1,7 @@
 import React from 'react';
 import {Timer} from './timer.jsx';
 import {Points} from './points.jsx';
+import {Pause} from './pause.jsx';
 import {UserCard} from './user-card.jsx';
 import {OpponentCard} from './opponent-card.jsx'
 import {Footer} from './footer.jsx';
@@ -25,10 +26,6 @@ class Game extends React.Component {
         this.setState({
             isPaused: !this.state.isPaused
         })
-        if(this.state.isPaused){
-            this.reloadCards()  
-        }
-        
     }
 
     handleOpponentPoints = () => {
@@ -117,6 +114,12 @@ class Game extends React.Component {
 
 
     render() {
+
+        if(this.state.isPaused){
+            return (
+                <Pause handlePause={this.handlePause}/>
+            )
+        }
         return (
             <div>
                 <div className="background__game">
