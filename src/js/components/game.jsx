@@ -3,7 +3,9 @@ import {Timer} from './timer.jsx';
 import {Points} from './points.jsx';
 import {Pause} from './pause.jsx';
 import {UserCard} from './user-card.jsx';
-import {OpponentCard} from './opponent-card.jsx'
+import {OpponentCard} from './opponent-card.jsx';
+import {Winner} from './win.jsx';
+import {Loser} from './lose.jsx';
 import {Footer} from './footer.jsx';
 
 
@@ -108,12 +110,31 @@ class Game extends React.Component {
 
     }
 
+    playAgain = () => {
+        this.setState({
+            userPoints: 0,
+            opponentPoints: 0,
+        })
+    }
+
     componentDidMount(){
         this.reloadCards()
     }
 
 
     render() {
+
+        if(this.state.opponentPoints === 10){
+            return(
+                <Loser playAgain={this.playAgain}/>
+            )
+        }
+
+        if(this.state.userPoints === 10){
+            return(
+                <Winner playAgain={this.playAgain}/>
+            )
+        }
 
         if(this.state.isPaused){
             return (
