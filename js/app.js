@@ -30975,7 +30975,7 @@ var Instruction = function (_React$Component) {
                                     null,
                                     '4.'
                                 ),
-                                ' Obrazek, kt\xF3ry si\u0119 powtarza zaznaczasz klikaj\u0105c na niego na swojej karcie. Proste.'
+                                ' Obrazek, kt\xF3ry si\u0119 powtarza zaznaczasz klikaj\u0105c na niego na swojej karcie. Proste. Gramy do 20 punkt\xF3w.'
                             ),
                             _react2.default.createElement(
                                 'div',
