@@ -2,4 +2,4 @@
 Online game based on Dobble.
 Using: JS, ES6, React, Sass, Gulp, Webpack.
 
-Demo: 
+Demo: https://kamilasieczkowska.github.io/Refleks_game/#/
